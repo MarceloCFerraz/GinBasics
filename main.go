@@ -1,10 +1,9 @@
 package main
 
 import (
-	"github.com/gin-gonic/gin"
+	"github.com/MarceloCFerraz/GinBasics/routes"
 )
 
 func main() {
-	server := gin.Default()
-	server.Run() // defaults to port 8080, provide ":5050" to change to another port
+	AlunosRoutes.HandleRequests()
 }
